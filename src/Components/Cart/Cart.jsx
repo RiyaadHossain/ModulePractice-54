@@ -10,8 +10,8 @@ const Cart = ({ item, removeItem }) => {
     return (
         <div className='mb-4 '>
            
-            <span>{title?.slice(0, 10)}<span className='bg-cyan-200 ml-2 p-1 rounded-full'>{quantity}</span></span>
-            <button onClick={() =>removeItem(item) } className='p-4  border ml-2 border-sky-500 rounded-full'>🗑️</button>
+            <span className='font-bold'>{title?.slice(0, 10)}<span className='bg-cyan-200 ml-2 p-1 rounded-full'>{quantity}</span></span>
+            <button onClick={() =>removeItem(item) } className='p-3  border ml-2 border-sky-500 rounded-full'>🗑️</button>
         </div>
     );
 };
